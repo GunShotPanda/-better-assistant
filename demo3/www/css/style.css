@@ -1,0 +1,17 @@
+/* Empty. Add your own CSS if you like */
+.col{
+    margin:5px;
+    height:85px;
+    text-align:center;
+    line-height:32px;
+}
+.col.light div{
+    text-align:left;
+}
+.col .icon{
+    font-size:32px;
+}
+.col1{
+    height:30px;
+    fontsize:30px;
+}

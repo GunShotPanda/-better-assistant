@@ -1,0 +1,83 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no,width=device-width,height=device-height">
+  <script src="ionic.bundle.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="ionic.min.css">
+</head>
+<ion-view view-title="搜课" class="">
+  <div class="bar bar-header bar-stable item-input-inset">
+  <label class="item-input-wrapper">
+  <i class="icon ion-ios-search placeholder-icon"></i>
+  <input type="search" placeholder="大家都在搜：七夕">
+  </label>
+  </div>
+  <ion-content>
+    <div class="bar bar-header bar-stable item-input-inset">
+      <div class="icon"></div>
+      <label class="item-input-wrapper">
+        <i class="icon ion-ios-search placeholder-icon"></i>
+        <input type="search" placeholder="大家都在搜：蓝翔">
+      </label>
+    </div>
+    <div class="row">
+      <div class="button col   positive-bg light">
+        <div>公开课</div>
+        <i class="icon ion-ios-book"></i>
+      </div>
+      <div class="button col  assertive-bg light">
+        <div>mooc</div>
+        <i class="icon ion-university"></i>
+      </div>
+      <div class="button col  calm-bg light">
+        <div>培训机构</div>
+        <i class="icon ion-easel"></i>
+      </div>
+    </div>
+    <div class="row">
+      <div class="button col  balanced-bg light">
+        <div>考试机构</div>
+        <i class="icon ion-briefcase"></i>
+      </div>
+      <div class="button col energized-bg light">
+        <div>热门排行</div>
+        <i class="icon ion-connection-bars"></i>
+      </div>
+      <div class="button col  royal-bg light">
+        <div>讨论社区</div>
+        <i class="icon ion-person-stalker"></i>
+      </div>
+    </div>
+    <div class="col1 calm-bg light ">
+      <div>猜你喜欢</div>
+    </div>
+  <div ng-controller="freshCtrl">
+    <ul class="list">
+        <ion-item href="templates/testnews.html" class="item-icon-right item-thumbnail-left" nav-transition="android">
+          <img src="img/ionic.png">
+          <h2>Ionic公开课今日开讲！</h2>
+          <p>ionicchina.com</p>
+          <i class="icon ion-ios-arrow-right"></i>
+        </ion-item>
+        <li class="item item-thumbnail-left">
+          <img src="img/ionic.png">
+          <h2>Ionic公开课今日开讲！</h2>
+          <p>ionicchina.com</p>
+        </li>
+        <li class="item">
+          <h2>Ionic公开课今日开讲！</h2>
+          <p>ionicchina.com</p>
+        </li>
+        <li class="item item-thumbnail-left">
+          <img src="img/ionic.png">
+          <h2>Ionic公开课今日开讲！</h2>
+          <p>ionicchina.com</p>
+        </li>
+      </ul>
+    <ion-infinite-scroll on-infinite="load_more();">
+    </ion-infinite-scroll>
+  </div>
+
+  </ion-content>
+</ion-view>
+</html>
